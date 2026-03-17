@@ -1,0 +1,168 @@
+<footer class="footer">
+    <div class="footer__container container">
+        <!-- Main Footer Content -->
+        <div class="footer__content">
+            <!-- Brand Column -->
+            <div class="footer__brand">
+                <a href="index.shtml" class="footer__logo">
+                    <i class="fa-solid fa-code footer__logo-icon"></i>
+                    <span class="footer__logo-text">YourCompany</span>
+                </a>
+                <p class="footer__description">
+                    We craft digital experiences that transform businesses. From stunning websites to powerful applications, we bring your vision to life with cutting-edge technology and creative excellence.
+                </p>
+                <div class="footer__social">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services Column -->
+            <div class="footer__column">
+                <h3 class="footer__title">
+                    <i class="fa-solid fa-gears"></i>
+                    Services
+                </h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="services.shtml#web-development" class="footer__link">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            Web Development
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.shtml#ui-design" class="footer__link">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            UI/UX Design
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.shtml#ecommerce" class="footer__link">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            E-Commerce Solutions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.shtml#mobile-apps" class="footer__link">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            Mobile Applications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.shtml#seo" class="footer__link">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            SEO Optimization
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.shtml#maintenance" class="footer__link">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            Website Maintenance
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Company Column -->
+            <div class="footer__column">
+                <h3 class="footer__title">
+                    <i class="fa-solid fa-building"></i>
+                    Company
+                </h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="about.shtml" class="footer__link">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.shtml" class="footer__link">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            Our Work
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pricing.shtml" class="footer__link">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            Pricing Plans
+                        </a>
+                    </li>
+                    <li>
+                        <a href="careers.shtml" class="footer__link">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            Careers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog.shtml" class="footer__link">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="privacy.shtml" class="footer__link">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            Privacy Policy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="footer__column">
+                <h3 class="footer__title">
+                    <i class="fa-solid fa-address-card"></i>
+                    Contact Us
+                </h3>
+                <ul class="footer__contact">
+                    <li class="footer__contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <span class="footer__contact-label">Phone</span>
+                            <a href="tel:+1234567890" class="footer__contact-link">+1 (234) 567-890</a>
+                        </div>
+                    </li>
+                    <li class="footer__contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <span class="footer__contact-label">Email</span>
+                            <a href="mailto:hello@yourcompany.com" class="footer__contact-link">hello@yourcompany.com</a>
+                        </div>
+                    </li>
+                    <li class="footer__contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span class="footer__contact-label">Address</span>
+                            <address class="footer__contact-link">
+                                123 Tech Street, Suite 100<br>
+                                San Francisco, CA 94102
+                            </address>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer__bottom">
+            <p class="footer__copyright">
+                <i class="fa-regular fa-copyright"></i>
+                <!--#echo var="DATE_LOCAL" --> YourCompany. All rights reserved.
+            </p>
+            <p class="footer__made-with">
+                Made with <i class="fa-solid fa-heart"></i> by YourCompany Team
+            </p>
+        </div>
+    </div>
+</footer>
