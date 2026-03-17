@@ -1,0 +1,64 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Apache Configuration - Enable SSI (Server Side Includes)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Enable SSI
+Options +Includes
+
+# Process .shtml files for SSI
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml
+
+# Default index file
+DirectoryIndex index.shtml
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Security
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect includes folder from direct access
+<FilesMatch "^includes/">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect .htaccess
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Performance
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Enable compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript
+</IfModule>
+
+# Browser caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+</IfModule>
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Clean URLs (optional)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Remove .shtml extension
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.shtml -f
+    RewriteRule ^(.*)$ $1.shtml [L]
+</IfModule>
