@@ -1,0 +1,69 @@
+<header class="header" id="header">
+    <nav class="nav container">
+        <!-- Logo -->
+        <a href="index.shtml" class="nav__logo">
+            <i class="fa-solid fa-code nav__logo-icon"></i>
+            <span class="nav__logo-text">YourCompany</span>
+        </a>
+
+        <!-- Navigation Menu -->
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.shtml" class="nav__link">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="services.shtml" class="nav__link">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>Services</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="portfolio.shtml" class="nav__link">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="about.shtml" class="nav__link">
+                        <i class="fa-solid fa-users"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="pricing.shtml" class="nav__link">
+                        <i class="fa-solid fa-tags"></i>
+                        <span>Pricing</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.shtml" class="nav__link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Close button for mobile -->
+            <div class="nav__close" id="nav-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+        <!-- CTA Button & Mobile Toggle -->
+        <div class="nav__actions">
+            <a href="contact.shtml" class="nav__cta">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Get Free Quote</span>
+            </a>
+
+            <!-- Mobile hamburger toggle -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+</header>
